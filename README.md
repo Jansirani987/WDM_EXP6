@@ -97,7 +97,7 @@ def search(query, tfidf_matrix, tfidf_vectorizer):
 
 ### Output:
 
-<img width="664" height="719" alt="image" src="https://github.com/user-attachments/assets/c3f43090-ac15-43bd-9a47-cd12358767b2" />
+<img width="761" height="734" alt="image" src="https://github.com/user-attachments/assets/771045aa-8e3a-4522-ae4b-dadfaf7f4c7e" />
 
 ### Result:
 Thus, the implementation of Information Retrieval Using Vector Space Model in Python is executed successfully.
