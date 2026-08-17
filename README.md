@@ -51,6 +51,7 @@ sklearn to demonstrate Information Retrieval using the Vector Space Model.
 
 ###### Calculate cosine similarity between query and documents
     def search(query, tfidf_matrix, tfidf_vectorizer):
+    ```
         # Preprocess query
 processed_query = preprocess_text(query)
 
@@ -71,6 +72,7 @@ results = [
 
 # Sort results by similarity score
 return sorted(results, key=lambda x: x[2], reverse=True)
+```
 ###### Get input from user
     query = input("Enter your query: ")
 
