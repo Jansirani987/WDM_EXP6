@@ -1,5 +1,5 @@
 ### EX6 Information Retrieval Using Vector Space Model in Python
-### DATE: 17.08.2026
+### DATE: 17-08-2026
 ### AIM: To implement Information Retrieval Using Vector Space Model in Python.
 ### Description: 
 <div align = "justify">
@@ -14,6 +14,8 @@ sklearn to demonstrate Information Retrieval using the Vector Space Model.
 4. Define a search function that calculates cosine similarity between a query and documents based on the TF-IDF matrix.
 5. Execute a sample query and display the search results along with similarity scores.
 
+### Name: JANSI RANI A A
+### Reg No: 212224040130
 ### Program:
 
     import requests
@@ -49,30 +51,31 @@ sklearn to demonstrate Information Retrieval using the Vector Space Model.
     tfidf_vectorizer = TfidfVectorizer()
     tfidf_matrix = tfidf_vectorizer.fit_transform(preprocessed_docs.values())
 
-###### Calculate cosine similarity between query and documents
-    def search(query, tfidf_matrix, tfidf_vectorizer):
-    ```
-        # Preprocess query
-processed_query = preprocess_text(query)
+######  Calculate cosine similarity between query and documents
 
-# Convert query into TF-IDF vector
-query_vector = tfidf_vectorizer.transform([processed_query])
+def search(query, tfidf_matrix, tfidf_vectorizer):
 
-# Calculate cosine similarity
-similarity_scores = cosine_similarity(
-    query_vector,
-    tfidf_matrix
-).flatten()
+    # Preprocess query
+    processed_query = preprocess_text(query)
 
-# Store results
-results = [
-    (doc_id, documents[doc_id], score)
-    for doc_id, score in zip(documents.keys(), similarity_scores)
-]
+    # Convert query into TF-IDF vector
+    query_vector = tfidf_vectorizer.transform([processed_query])
 
-# Sort results by similarity score
-return sorted(results, key=lambda x: x[2], reverse=True)
-```
+    # Calculate cosine similarity
+    similarity_scores = cosine_similarity(
+        query_vector,
+        tfidf_matrix
+    ).flatten()
+
+    # Store results
+    results = [
+        (doc_id, documents[doc_id], score)
+        for doc_id, score in zip(documents.keys(), similarity_scores)
+    ]
+
+    # Sort results by similarity score
+    return sorted(results, key=lambda x: x[2], reverse=True)
+
 ###### Get input from user
     query = input("Enter your query: ")
 
@@ -94,4 +97,9 @@ return sorted(results, key=lambda x: x[2], reverse=True)
 
 ### Output:
 
+<img width="664" height="719" alt="image" src="https://github.com/user-attachments/assets/c3f43090-ac15-43bd-9a47-cd12358767b2" />
+
 ### Result:
+Thus, the implementation of Information Retrieval Using Vector Space Model in Python is executed successfully.
+
+
